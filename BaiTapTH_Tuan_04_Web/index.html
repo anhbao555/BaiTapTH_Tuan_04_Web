@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #container {
+            display: flex;
+            justify-content: space-between;
+            width: 1440px;
+        }
+        
+        #center {
+            width: 910px;
+            background-color: bisque;
+            margin-left: 60px;
+            margin-top: 50px;
+            margin-right: 50px;
+        }
+        
+        .title {
+            font-size: 30px;
+            padding-bottom: 30px;
+        }
+        
+        .parti {
+            font-size: 30px;
+        }
+        
+        #right {
+            width: 440px;
+            margin-top: 50px;
+            padding-left: 20px;
+            background-color: aqua;
+        }
+        
+        #left {
+            width: 90px;
+            height: 870px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: red;
+        }
+        
+        #left_above {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: green;
+        }
+        
+        #below {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: blue;
+        }
+        
+        .item {
+            width: 32px;
+            margin-top: 50px;
+        }
+        
+        .item1 {
+            width: 32px;
+            margin-top: 50px;
+        }
+        
+        #setting {
+            margin-top: 36px;
+        }
+        
+        .titleparti {
+            padding-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .add {
+            color: red;
+            font-size: 20px;
+            border: 0.5px solid red;
+            border-radius: 10%;
+            padding: 10px;
+        }
+        
+        .parti {
+            font-size: 30px;
+        }
+        
+        .participants {
+            display: flex;
+            padding-bottom: 20px;
+            justify-content: space-between;
+        }
+        
+        .dot3p {
+            margin: 0;
+            height: 4px;
+            width: 4px;
+            background-color: gray;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        
+        .dotonline {
+            margin: 0;
+            height: 8px;
+            width: 8px;
+            background-color: green;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        
+        .chat {
+            padding-top: 30px;
+        }
+        
+        .chattitle {
+            font-size: 30px;
+        }
+        
+        .chatbox {
+            display: flex;
+            padding-bottom: 20px;
+        }
+        
+        .face {
+            display: flex;
+            text-align: center;
+            margin-top: 30px;
+            justify-content: space-between;
+            padding-bottom: 30px;
+        }
+        .big-img {
+            position: relative;
+        }
+        .big-img>h4{
+            position: absolute;
+            color: white;
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: gray;
+            top: -5px;
+            margin-left: 25px;
+            padding: 10px;
+        }
+        .big-img .miccolor {
+            position: absolute;
+            top: 5px;
+            margin-left: -70px;
+            padding: 10px;
+        }
+
+        .image {
+            position: relative;
+        }
+        
+        .image>h4 {
+            position: absolute;
+            color: white;
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: gray;
+            top: -10px;
+            margin-left: 10px;
+            padding: 3px;
+        }
+
+        .image .micgreycolor{
+            position: absolute;
+            margin-left: -45px;
+            padding: 10px;
+            width: 28px;
+        }
+
+        .center-below{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            gap: 20px;
+            
+        }
+
+        .center-below>img{
+            height: 40px;
+        }
+
+        .center-below>h4 {
+            background-color: red;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div id="left">
+                <div id="left_above">
+                    <img class="item" src="logo.png" alt="">
+                    <img class="item" src="home.png" alt="">
+                    <img class="item" src="chatting.png" alt="">
+                    <img class="item" src="calender.png" alt="">
+                    <img class="item1" src="cam.png" alt="">
+                    <img class="item" src="user.png" alt="">
+                </div>
+
+                <div id="below">
+                    <img src="avatar.png" width="44" alt="">
+                    <img id="setting" src="setting.png" width="44" alt="">
+                </div>
+            </div>
+            <div id="center">
+                <div class="title">Meeting title</div>
+                <div class="big-img">
+                    <img src="img_big.png" alt="">
+                    <h4>
+                        <span style="vertical-align: middle;" class="dotonline"></span> Benjamin Crawford
+                    </h4>
+                    <img class="miccolor" src="mic_color.png" alt="">
+                </div>
+                
+                <div class="face">
+                    <div class="image">
+                        <img src="img2.png" alt="">
+                        <h4>
+                            <span style="vertical-align: middle;" class="dotonline"></span> Christian Scott
+                        </h4>
+                        <img class="micgreycolor" src="mic_grey_color.png" alt="">
+                    </div>
+                    <div class="image">
+                        <img src="img1.png" alt="">
+                        <h4>
+                            <span style="vertical-align: middle;" class="dotonline"></span> Deborah Chu
+                        </h4>
+                        <img class="micgreycolor" src="mic2.png" alt="">
+
+                    </div>
+
+                    <div class="image">
+                        <img src="img.png" alt="">
+                        <h4>
+                            <span style="vertical-align: middle;" class="dotonline"></span> Jordan Nieves
+                        </h4>
+                        <img class="micgreycolor" src="mic_grey_color.png" alt="">
+                        
+                    </div>
+
+                </div>
+                <div class="center-below">
+                    <img src="mic_grey_color.png" alt="">
+                    <img src="cam_color.png" alt="">
+                    <img src="speaker_grey_color.png" alt="">
+                    <h4>
+                        <span style="vertical-align: top;">End Meeting</span>
+                    </h4>
+                    <img src="share.png" alt="">
+                    <img src="Button 2179.png" alt="">
+                    <img src="3cham.png" alt="">
+                </div>
+            </div>
+            <div id="right">
+                <div class="titleparti">
+                    <div class="parti">
+                        Particpants
+                    </div>
+                    <div class="add">
+                        + Add
+                    </div>
+                </div>
+
+                <div class="participants">
+                    <div>
+                        <img style="vertical-align: middle;" src="avatar 1322.png" alt=""> Benjamin Crawford
+                    </div>
+
+                    <div>
+                        <img style="vertical-align: middle;" src="mic1.png" alt="">
+                        <img style="vertical-align: middle;" src="cam_small.png" alt="">
+                        <span style="vertical-align: middle;" class="dot3p"></span>
+                        <span style="vertical-align: middle;" class="dot3p"></span>
+                        <span style="vertical-align: middle;" class="dot3p"></span>
+                    </div>
+                </div>
+                <div class="participants">
+                    <div>
+                        <img style="vertical-align: middle;" src="avatar 1323.png" alt=""> Christian Scott
+                    </div>
+                    <div>
+                        <img style="vertical-align: middle;" src="mic1.png" alt="">
+                        <img style="vertical-align: middle;" src="cam_small.png" alt="">
+                        <span style="vertical-align: middle;" class="dot3p"></span>
+                        <span style="vertical-align: middle;" class="dot3p"></span>
+                        <span style="vertical-align: middle;" class="dot3p"></span>
+                    </div>
+                </div>
+                <div class="participants">
+                    <div>
+                        <img style="vertical-align: middle;" src="avatar 1324.png" alt=""> Deborah Chu
+                    </div>
+                    <div>
+                        <img style="vertical-align: middle;" src="mic2.png" alt="">
+                        <img style="vertical-align: middle;" src="cam_small.png" alt="">
+                        <span style="vertical-align: middle;" class="dot3p"></span>
+                        <span style="vertical-align: middle;" class="dot3p"></span>
+                        <span style="vertical-align: middle;" class="dot3p"></span>
+                    </div>
+                </div>
+                <div class="participants">
+                    <div>
+                        <img style="vertical-align: middle;" src="avatar 1325.png" alt=""> Jordan Nieves
+                    </div>
+
+                    <div>
+                        <img style="vertical-align: middle;" src="mic1.png" alt="">
+                        <img style="vertical-align: middle;" src="cam_small.png" alt="">
+                        <span style="vertical-align: middle;" class="dot3p"></span>
+                        <span style="vertical-align: middle;" class="dot3p"></span>
+                        <span style="vertical-align: middle;" class="dot3p"></span>
+                    </div>
+                </div>
+                <div class="chat">
+                    <div class="chattitle">
+                        Chat
+                    </div>
+                    <div class="chatbox">
+
+                    </div>
+                    <div class="chatbox">
+                        <div>
+                            <img style="vertical-align: middle;" src="avatar 1326.png" alt=""> Deborah Chu
+                        </div>
+
+                    </div>
+                    <div class="chatbox">
+                        <div>
+                            <img style="vertical-align: middle;" src="avatar 1327.png" alt=""> Jordan Nieves
+                        </div>
+                    </div>
+                    <div class="chatbox">
+                        <div>
+                            <img style="vertical-align: middle;" src="avatar 1328.png" alt=""> Benjamin Crawford
+                        </div>
+
+                    </div>
+                    <div class="chatbox">
+                        <div>
+                            <img style="vertical-align: middle;" src="avatar 1329.png" alt=""> Christian Scott
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    </div>
+
+</body>
+
+</html>
